@@ -6,7 +6,7 @@ const fs = require('fs');
 let router = express.Router()
 const pino = require("pino");
 const {
-    default: Black_Caatro,
+    default: Black_Castro,
     useMultiFileAuthState,
     delay,
     makeCacheableSignalKeyStore,
@@ -26,7 +26,7 @@ router.get('/', async (req, res) => {
             saveCreds
         } = await useMultiFileAuthState('./temp/'+id)
      try {
-            let Pair_Code_By_Black_Castro = Black_Catro({
+            let Pair_Code_By_Black_Castro = Black_Castro({
                 auth: {
                     creds: state.creds,
                     keys: makeCacheableSignalKeyStore(state.keys, pino({level: "fatal"}).child({level: "fatal"})),
