@@ -1,6 +1,6 @@
 {
     "description": "paircode",
-    "main": "kish.js",
+    "main": "ghost.js",
   "engines" : { 
     "npm" : ">=9.7.2",
     "node" : ">=20.0.0"
