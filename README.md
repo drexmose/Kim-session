@@ -30,8 +30,8 @@ RENDER PROCESS:
 ```
 
 
-## MADE WITH ❤️ BY BLACK CASTRO:
+## MADE WITH ❤️ BY BLVCK CASTRO:
  <a href="https://github.com/Blvckcastro"><img src="https://github.com/Blvckcastro.png" width="200" height="200" alt="Blvckcastro"/></a>
 
- ### Crrdits To:
+ ### Credits To:
  [Gifted Tech](https://github.com/mouricedevs)
