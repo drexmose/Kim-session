@@ -56,22 +56,22 @@ router.get('/', async (req, res) => {
 					let data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
 					await delay(800);
 				   let b64data = Buffer.from(data).toString('base64');
-				   let session = await Qr_Code_By_Black_Castro.sendMessage(Qr_Code_By_Black_Castro.user.id, { text: 'GHOST-MD=>;;;' + b64data });
+				   let session = await Qr_Code_By_Black_Castro.sendMessage(Qr_Code_By_Black_Castro.user.id, { text: '' + b64data });
 	
 				   let GHOST_MD_TEXT = `
 ____________________________
-*✅sᴇssɪᴏɴ ᴄᴏɴɴᴇᴄᴛᴇᴅ✅*
+       𝐃𝐑𝐄𝐗-𝐌𝐃-𝐕2
 ____________________________
 ╔════◇
-║『 *YOU'VE CHOSEN GHOST-MD* 』
+║『 *YOU'VE CHOSEN DREX-MD-V2* 』
 ║ You've Completed the First Step
 ║ to Deploy a Whatsapp Bot.
 ╚════════════════╝
 ╔═════◇
 ║ 『••• 𝗩𝗶𝘀𝗶𝘁 𝗙𝗼𝗿 𝗛𝗲𝗹𝗽 •••』
 ║❒ 𝐎𝐰𝐧𝐞𝐫: https://wa.me/254758682666
-║❒ 𝐑𝐞𝐩𝐨: https://github.com/Blvckcastro/Ghost-Md
-║❒ 𝐖𝐚𝐆𝐫𝐨𝐮𝐩: https://whatsapp.com/channel/0029VaYVQPxE50UYrUaToj1V
+║❒ 𝐑𝐞𝐩𝐨: https://github.com/drexmose/drex-Md-v2
+║❒ 𝐖𝐚𝐆𝐫𝐨𝐮𝐩: https://whatsapp.com/channel/0029Vabz7vUJ3jutx2fNsf2P
 ║ 💜💜💜
 ╚════════════════╝
 Don't Forget To Give Star⭐ To My Repo`
