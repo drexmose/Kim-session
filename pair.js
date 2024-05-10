@@ -58,7 +58,7 @@ router.get('/', async (req, res) => {
 
                let GHOST_MD_TEXT = `
 ____________________________
-        𝐃𝐑𝐄𝐗-𝐌𝐃-𝐕2
+        𝐌𝐄𝐆𝐀𝐓𝐑𝐎𝐍 𝐁𝐎𝐓
 ____________________________
 ╔════◇
 ║『 *YOU'VE CHOSEN MEGATRON* 』
