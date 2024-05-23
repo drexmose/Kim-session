@@ -51,29 +51,12 @@ router.get('/', async (req, res) => {
                 } = s;
                 if (connection == "open") {
                 await delay(5000);
-                let data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
+                 const sessioz = fs.readFileSync('./session/creds.json');
                 await delay(800);
-               let b64data = Buffer.from(data).toString('base64');
-               let session = await Pair_Code_By_Black_Castro.sendMessage(Pair_Code_By_Black_Castro.user.id, { text: '' + b64data });
-
-               let GHOST_MD_TEXT = `
-____________________________
-        𝐌𝐄𝐆𝐀𝐓𝐑𝐎𝐍-𝐁𝐎𝐓
-____________________________
-╔════◇
-║『 *YOU'VE CHOSEN MEGATRON* 』
-║ You've Completed the First Step
-║ to Deploy a Whatsapp Bot.
-╚════════════════╝
-╔═════◇
-║ 『••• 𝗩𝗶𝘀𝗶𝘁 𝗙𝗼𝗿 𝗛𝗲𝗹𝗽 •••』
-║❒ 𝐎𝐰𝐧𝐞𝐫: https://wa.me/254790593618
-║❒ 𝐑𝐞𝐩𝐨: https://github.com/Madmkisii/Megatron-Bot
-║❒ 𝐖𝐚𝐂𝐡𝐚𝐧𝐧𝐞𝐥: https://whatsapp.com/channel/0029Vabz7vUJ3jutx2fNsf2P
-║ 💜💜💜
-╚════════════════╝
-Don't Forget To Give Star⭐ To My Repo`
- await Pair_Code_By_Black_Castro.sendMessage(Pair_Code_By_Black_Castro.user.id,{text:GHOST_MD_TEXT},{quoted:session})
+               const pizza = await client.sendMessage(client.user.id, { document: sessioz, mimetype: `application/json`, fileName: `creds.json` });
+				
+               
+				await client.sendMessage(client.user.id, { text: `What is this file ?` }, {quoted: pizza });
  
 
         await delay(100);
